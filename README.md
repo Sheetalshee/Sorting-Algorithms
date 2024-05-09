@@ -20,7 +20,21 @@ To write a program to perform selection sort and insertion sort using python pro
 ## Program:
 i)	#Selection Sort
 ```
-
+program to sort the element in the list using the insertion sort algorithm.
+'''
+Developed by: R.SHEETAL
+RegisterNumber:212223230206
+'''
+def selection_sort(nums):
+    for i in range(len(nums )):
+        low=i
+        for j in range(i+1,len(nums)):
+            if(nums[j]<nums[low]):
+                low=j
+        nums[i],nums[low]=nums[low],nums[i]
+    print(nums)
+list_of_nums=eval(input())
+selection_sort(list_of_nums)
 
 
 
@@ -28,15 +42,28 @@ i)	#Selection Sort
 ```
 ii)	#Insertion Sort
 ```
-
-
-
-
-
+Program to sort the elements in the list using the Insertion Sort algorithm.
+Developed by: SHEETAL.R
+RegisterNumber: 212223230206
+'''
+def insertion_sort(nums):
+    for i in range(1,len(nums)):
+        insert=nums[i]
+        j=i-1
+        while(j>=0 and nums[j]>insert):
+            nums[j+1]=nums[j]
+            j-=1
+        nums[j+1]=insert
+    print(nums)
+list_of_nums=eval(input())
+insertion_sort(list_of_nums)
 
 ```
 
 ## Output:
+![image](https://github.com/Sheetalshee/Sorting-Algorithms/assets/144979107/e7942b55-aafc-40bb-a647-fd60e0616daa)
+![image](https://github.com/Sheetalshee/Sorting-Algorithms/assets/144979107/18be065d-d979-459f-8956-a61949bab738)
+
 
 
 ## Result:
